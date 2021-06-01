@@ -8,8 +8,8 @@ router.get('/getRandomPeople', (req, res) => {
   return selectRandomPeopleController.handle(res)
 });
 
-router.post('/createUser', (req, res) => {
-  return createPeopleController.handle(req, res)
-});
+// router.post('/createUser', (req, res) => {
+//   return createPeopleController.handle(req, res)
+// });
 
 export {router};

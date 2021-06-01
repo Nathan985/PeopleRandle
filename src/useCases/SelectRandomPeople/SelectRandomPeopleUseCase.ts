@@ -9,10 +9,10 @@ export class SelectRandomPeopleCaseUse {
 
   async execute(){
 
-    const Connection = await this.mysqlCreateConnectionRepository.execute();
+    // const Connection = await this.mysqlCreateConnectionRepository.execute();
 
-    const PeopleRandom = await this.peopleRepository.getHandlePeople(Connection);
-
+    // const PeopleRandom = await this.peopleRepository.getHandlePeople(Connection);
+    const PeopleRandom = "Oi" 
     if(!PeopleRandom){
       throw new Error('No data found')
     }
